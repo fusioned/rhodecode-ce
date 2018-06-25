@@ -13,7 +13,10 @@ RUN .rccontrol-profile/bin/rccontrol	\
 
 # fix for hardcoded hooks URI
 ENV DEFAULT_RC_HOOKS_HOST 127.0.0.1
-COPY --chown=rhodecode:rhodecode files .
+COPY files .
+
+# workaround Docker Hub server version < 17.09-ce - does not support --chown
+RUN sudo chown rhodecode:rhodecode patched-start.sh
 
 EXPOSE 5000
 CMD bash ./patched-start.sh
