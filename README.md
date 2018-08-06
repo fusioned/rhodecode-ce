@@ -14,7 +14,8 @@ Specify the RC_HOOKS_HOST env var in the docker config.
 
 I follow the same naming scheme for the images as [RhodeCode](https://docs.rhodecode.com/RhodeCode-Enterprise/release-notes/release-notes.html) themselves
 
-- [latest](https://github.com/ckulka/rhodecode-ce/tree/master) (corresponds to 4.12.2)
+- [latest](https://github.com/ckulka/rhodecode-ce/tree/master) (corresponds to 4.12.4)
+- [4.12.4](https://github.com/ckulka/rhodecode-ce/tree/4.12.4)
 - [4.12.2](https://github.com/ckulka/rhodecode-ce/tree/4.12.2)
 - [4.10.5](https://github.com/ckulka/rhodecode-ce/tree/4.10.5)
 - [4.9.0](https://github.com/ckulka/rhodecode-ce/tree/4.9.0)

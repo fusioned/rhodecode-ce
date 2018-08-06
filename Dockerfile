@@ -1,8 +1,8 @@
-FROM fusioned/rhodecode-rccontrol:1.18.0
+FROM fusioned/rhodecode-rccontrol:1.18.0.1700
 LABEL maintainer="cyrill.kulka@gmail.com"
 
 ENV RC_APP		Community
-ENV RC_VERSION	4.12.2
+ENV RC_VERSION	4.12.4
 
 # Install RhodeCode Community Edition
 RUN .rccontrol-profile/bin/rccontrol	\
