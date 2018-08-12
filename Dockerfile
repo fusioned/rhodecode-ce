@@ -15,5 +15,8 @@ RUN .rccontrol-profile/bin/rccontrol	\
 ENV DEFAULT_RC_HOOKS_HOST 127.0.0.1
 COPY files .
 
+# enable celery
+RUN .rccontrol-profile/bin/rccontrol enable-module celery community-1
+
 EXPOSE 5000
 CMD bash ./patched-start.sh
